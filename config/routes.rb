@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'forms',         to: 'pages#forms'
   get 'presentations', to: 'pages#presentations'
   get 'tables',        to: 'pages#tables'
+  get 'ui-elements',   to: 'pages#ui_elements'
 end

@@ -1,0 +1,133 @@
+%nav.breadcrumb.is-small{"aria-label" => "breadcrumbs"}
+  %ul
+    %li
+      %a{:href => "#"} Home
+    %li.is-active
+      %a{"aria-current" => "page", :href => "#"} UI Elements
+.level
+  .level-left
+    .level-item
+      .title
+        UI Elements (
+        %a{:href => "http://bulma.io/documentation/elements/box/"}> read more
+        )
+  .level-right
+    .level-item
+      %button.button.is-small{:type => "button"}
+        March 8, 2017 - April 6, 2017
+.columns.is-multiline
+  .container.block.is-clearfix
+    %h3 Button
+    %div
+      %a.button Anchor
+      %button.button Button
+      %input.button{:type => "submit", :value => "Submit input"}/
+      %input.button{:type => "reset", :value => "Reset input"}/
+  .container.block.is-clearfix
+    %div
+      %a.button.is-white White
+      %a.button.is-light Light
+      %a.button.is-dark Dark
+      %a.button.is-black Black
+      %a.button.is-link Link
+  .container.block.is-clearfix
+    %div
+      %a.button.is-primary Primary
+      %a.button.is-info Info
+      %a.button.is-success Success
+      %a.button.is-warning Warning
+      %a.button.is-danger Danger
+  .container.block.is-clearfix
+    %div
+      %a.button.is-small Small
+      %a.button Normal
+      %a.button.is-medium Medium
+      %a.button.is-large Large
+  .container.block.is-clearfix
+    %div
+      %a.button.is-outlined Outlined
+      %a.button.is-primary.is-outlined Outlined
+      %a.button.is-info.is-outlined Outlined
+      %a.button.is-success.is-outlined Outlined
+      %a.button.is-danger.is-outlined Outlined
+  .container.block.is-clearfix
+    %h3 Tag
+    %div
+      %span.tag.is-black Black
+      %span.tag.is-dark Dark
+      %span.tag.is-light Light
+      %span.tag.is-white White
+      %span.tag.is-primary Primary
+      %span.tag.is-info Info
+      %span.tag.is-success Success
+      %span.tag.is-warning Warning
+      %span.tag.is-danger Danger
+  .container.block.is-clearfix
+    %h3 Icon
+    %div
+      %span.icon.has-text-info
+        %i.fa.fa-info-circle
+      %span.icon.has-text-success
+        %i.fa.fa-check-square
+      %span.icon.has-text-warning
+        %i.fa.fa-warning
+      %span.icon.has-text-danger
+        %i.fa.fa-ban
+  .container.block.is-clearfix
+    %h3 Image
+    %figure.image.is-128x128
+      %img{:src => "http://bulma.io/images/placeholders/256x256.png"}/
+  .container.block.is-clearfix
+    %h3 Progress
+    %progress.progress.is-primary{:max => "100", :value => "30"} 30%
+    %progress.progress.is-info{:max => "100", :value => "45"} 45%
+    %progress.progress.is-success{:max => "100", :value => "60"} 60%
+    %progress.progress.is-warning{:max => "100", :value => "75"} 75%
+    %progress.progress.is-danger{:max => "100", :value => "90"} 90%
+  .container.block.is-clearfix
+    %h3 Notification
+    .notification.is-primary
+      %button.delete
+      Primar lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+      dolor.
+      = succeed "," do
+        %strong Pellentesque risus mi
+      %a felis venenatis
+      efficitur. Sit amet,
+      consectetur adipiscing elit
+    .notification.is-info
+      %button.delete
+      Info lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor.
+      = succeed "," do
+        %strong Pellentesque risus mi
+      %a felis venenatis
+      efficitur. Sit amet, consectetur
+      adipiscing elit
+    .notification.is-success
+      %button.delete
+      Success lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+      dolor.
+      = succeed "," do
+        %strong Pellentesque risus mi
+      %a felis venenatis
+      efficitur. Sit amet,
+      consectetur adipiscing elit
+    .notification.is-warning
+      %button.delete
+      Warning lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+      dolor.
+      = succeed "," do
+        %strong Pellentesque risus mi
+      %a felis venenatis
+      efficitur. Sit amet,
+      consectetur adipiscing elit
+    .notification.is-danger
+      %button.delete
+      Danger lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum
+      dolor.
+      = succeed "," do
+        %strong Pellentesque risus mi
+      %a felis venenatis
+      efficitur. Sit amet,
+      consectetur adipiscing elit
+-#%script{:src => "/bulma-admin-dashboard-template/dist/build.js"}

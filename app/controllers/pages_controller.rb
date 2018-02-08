@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def tables
   end
+
+  def ui_elements
+  end
 end

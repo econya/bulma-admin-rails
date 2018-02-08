@@ -16,7 +16,7 @@
           %i.fa.fa-pencil-square-o
         Forms
     %li
-      %a{:href => "/bulma-admin-dashboard-template/ui-elements.html"}
+      = link_to ui_elements_path, class: nav_class_if_active('pages#ui_elements') do
         %span.icon.is-small
           %i.fa.fa-desktop
         UI Elements
