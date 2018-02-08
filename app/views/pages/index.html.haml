@@ -1,0 +1,284 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "index, follow", :name => "robots"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7", :name => "viewport"}/
+    %meta{:content => "en-EN", :name => "language"}/
+    %meta{:content => "Irfan Maulana", :name => "author"}/
+    %title Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css", :rel => "stylesheet"}/
+    %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "/bulma-admin-dashboard-template/dist/main.css", :rel => "stylesheet"}/
+    / Global site tag (gtag.js) - Google Analytics
+    %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"}
+    :javascript
+      window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-25065548-2');
+    / GOOGLE ANALYTICS AND FRIENDS
+    %script{:async => "", :src => "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
+    :javascript
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5442972248172818",
+        enable_page_level_ads: true
+      });
+  %body
+    %header.hero.is-light
+      .hero-head
+        %nav.navbar.has-shadow{"aria-label" => "main navigation", :role => "navigation"}
+          .navbar-brand
+            %a.navbar-item.is--brand
+              %img.navbar-brand-logo{:alt => "Bulma Admin Template logo", :src => "/bulma-admin-dashboard-template/logo.png"}/
+            %a.navbar-item.is-tab.is-hidden-mobile.is-active
+              %span.icon.is-medium>
+                %i.fa.fa-home
+              Home
+            %a.navbar-item.is-tab.is-hidden-mobile Features
+            %a.navbar-item.is-tab.is-hidden-mobile Pricing
+            %a.navbar-item.is-tab.is-hidden-mobile About
+            %button.button.navbar-burger{"data-target" => "navMenu"}
+              %span
+              %span
+              %span
+          #navMenu.navbar-menu.navbar-end
+            %a.navbar-item.is-tab.is-hidden-tablet.is-active Home
+            %a.navbar-item.is-tab.is-hidden-tablet Features
+            %a.navbar-item.is-tab.is-hidden-tablet Pricing
+            %a.navbar-item.is-tab.is-hidden-tablet About
+            %a.navbar-item.nav-tag
+              %span.icon.is-small
+                %i.fa.fa-envelope-o
+              %span.tag.is-primary.tag-notif 6
+            .navbar-item.has-dropdown.is-hoverable
+              %a.navbar-link
+                %figure.image.is-32x32{:style => "margin-right:.5em;"}
+                  %img{:src => "https://avatars1.githubusercontent.com/u/7221389?v=4&s=32"}/
+                mazipan
+              .navbar-dropdown.is-right
+                %a.navbar-item
+                  %span.icon.is-small
+                    %i.fa.fa-user-o
+                  Profile
+                %hr.navbar-divider/
+                %a.navbar-item
+                  %span.icon.is-small
+                    %i.fa.fa-power-off
+                  Logout
+    .wrapper
+      .columns
+        %aside.column.is-2.aside
+          %nav.menu
+            %p.menu-label
+              General
+            %ul.menu-list
+              %li
+                %a.is-active{:href => "#"}
+                  %span.icon.is-small
+                    %i.fa.fa-tachometer
+                  Dashboard
+            %p.menu-label
+              Administration
+            %ul.menu-list
+              %li
+                %a{:href => "/bulma-admin-dashboard-template/forms.html"}
+                  %span.icon.is-small
+                    %i.fa.fa-pencil-square-o
+                  Forms
+              %li
+                %a{:href => "/bulma-admin-dashboard-template/ui-elements.html"}
+                  %span.icon.is-small
+                    %i.fa.fa-desktop
+                  UI Elements
+              %li
+                %a{:href => "/bulma-admin-dashboard-template/tables.html"}
+                  %span.icon.is-small
+                    %i.fa.fa-table
+                  Tables
+              %li
+                %a{:href => "/bulma-admin-dashboard-template/presentations.html"}
+                  %span.icon.is-small
+                    %i.fa.fa-bar-chart
+                  Presentations
+              %li
+                %a
+                  %i.fa.fa-cog
+                  Settings
+                %ul
+                  %li
+                    %a Members
+                  %li
+                    %a Plugins
+                  %li
+                    %a Add a member
+            %p.menu-label
+              Live On
+            %ul.menu-list
+              %li
+                %a
+                  %span.icon.is-small
+                    %i.fa.fa-bug
+                  Additional Pages
+              %li
+                %a
+                  %span.icon.is-small
+                    %i.fa.fa-windows
+                  Extras
+              %li
+                %a
+                  %span.icon.is-small
+                    %i.fa.fa-laptop
+                  Landing Page
+        %main.column.main
+          %nav.breadcrumb.is-small{"aria-label" => "breadcrumbs"}
+            %ul
+              %li
+                %a{:href => "#"} Home
+              %li.is-active
+                %a{"aria-current" => "page", :href => "#"} Dashboard
+          .level
+            .level-left
+              .level-item
+                .title.has-text-primary
+                  %i.fa.fa-tachometer
+                  Dashboard
+            .level-right
+              .level-item
+                %button.button.is-small{:type => "button"}
+                  March 8, 2017 - April 6, 2017
+          .columns.is-multiline
+            .column
+              .box.notification.is-primary
+                .heading Top Seller Total
+                .title 56,950
+                .level
+                  .level-item
+                    %div
+                      .heading Sales $
+                      .title.is-5 250K
+                  .level-item
+                    %div
+                      .heading Overall $
+                      .title.is-5 750K
+                  .level-item
+                    %div
+                      .heading Sales %
+                      .title.is-5 25%
+            .column
+              .box.notification.is-warning
+                .heading Revenue / Expenses
+                .title 55% / 45%
+                .level
+                  .level-item
+                    %div
+                      .heading Rev Prod $
+                      .title.is-5 30%
+                  .level-item
+                    %div
+                      .heading Rev Serv $
+                      .title.is-5 25%
+                  .level-item
+                    %div
+                      .heading Exp %
+                      .title.is-5 45%
+            .column
+              .box.notification.is-info
+                .heading Feedback Activity
+                .title 78% ↑
+                .level
+                  .level-item
+                    %div
+                      .heading Pos
+                      .title.is-5 1560
+                  .level-item
+                    %div
+                      .heading Neg
+                      .title.is-5 368
+                  .level-item
+                    %div
+                      .heading Pos/Neg %
+                      .title.is-5 77% / 23%
+            .column
+              .box.notification.is-danger
+                .heading Orders / Returns
+                .title 75% / 25%
+                .level
+                  .level-item
+                    %div
+                      .heading Orders $
+                      .title.is-5 425K
+                  .level-item
+                    %div
+                      .heading Returns $
+                      .title.is-5 106K
+                  .level-item
+                    %div
+                      .heading Success %
+                      .title.is-5 + 28,5%
+          .columns.is-multiline
+            .column.is-6
+              .panel
+                %p.panel-heading
+                  Chart - Bar Style (Chart.js)
+                .panel-block
+                  %canvas#chartBar{:height => "400", :width => "400"}
+            .column.is-6
+              .panel
+                %p.panel-heading
+                  Chart - Line Style (Chart.js)
+                .panel-block
+                  %canvas#chartLine{:height => "400", :width => "400"}
+            .column.is-6
+              .panel
+                %p.panel-heading
+                  Chart - Doughnut Style (Chart.js)
+                .panel-block
+                  %canvas#chartDoughnut{:height => "400", :width => "400"}
+            .column.is-6
+              .panel
+                %p.panel-heading
+                  Chart - Scatter Style (Chart.js)
+                .panel-block
+                  %canvas#chartScatter{:height => "400", :width => "400"}
+    %script{:src => "/bulma-admin-dashboard-template/dist/build.js"}
+    / GOOGLE ANALYTICS AND FRIENDS
+    %script{:async => "", :src => "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"}
+    %ins.adsbygoogle{"data-ad-client" => "ca-pub-5442972248172818", "data-ad-format" => "auto", "data-ad-slot" => "1487770485", :style => "display:block"}
+    :javascript
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    %script{:type => "application/ld+json"}
+      :cdata
+        {"@context":"http://schema.org","@type":"WebSite","url":"https://www.mazipan.github.io/","name":"Irfan Maulana | Front End Developer","author":"Irfan Maulana","image":"http://mazipan.github.io/images/irfan-maulana.jpg","description":"Irfan Maulana is Front End Developer from Indonesia - Man that craft some code to build a beauty and readable code, experienced in web and desktop technology.","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}
+    %script{:type => "application/ld+json"}
+      :cdata
+        {"@context":"http://schema.org","@type":"Person","email":"mailto:mazipanneh@gmail.com","image":"http://mazipan.github.io/images/irfan-maulana.jpg","jobTitle":"Software Engineer","name":"Irfan Maulana","url":"https://www.mazipan.github.io/","sameAs":["https://www.facebook.com/mazipanneh","https://instagram.com/maz_ipan","https://twitter.com/Maz_Ipan","https://id.linkedin.com/in/irfanmaulanamazipan","https://www.slideshare.net/IrfanMaulana21","https://github.com/mazipan"]}
+    %script{:type => "application/ld+json"}
+      :cdata
+        {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+        "@id": "http://mazipan.github.io/",
+        "name": "Home",
+        "image": "http://mazipan.github.io/images/irfan-maulana.jpg"
+        }
+        }, {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+        "@id": "http://mazipan.github.io/demo/",
+        "name": "Demo",
+        "image": "http://mazipan.github.io/images/irfan-maulana.jpg"
+        }
+        }, {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+        "@id": "http://mazipan.github.io/bulma-admin-dashboard-template",
+        "name": "bulma-admin-dashboard-template",
+        "image": "https://mazipan.github.io/bulma-admin-dashboard-template/logo.png"
+        }
+        }]
+        }
