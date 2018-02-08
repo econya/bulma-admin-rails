@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'dashboard',     to: 'pages#dashboard'
   get 'forms',         to: 'pages#forms'
   get 'presentations', to: 'pages#presentations'
+  get 'tables',        to: 'pages#tables'
 end

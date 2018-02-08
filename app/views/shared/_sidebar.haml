@@ -21,7 +21,7 @@
           %i.fa.fa-desktop
         UI Elements
     %li
-      %a{:href => "/bulma-admin-dashboard-template/tables.html"}
+      = link_to tables_path, class: nav_class_if_active('pages#tables') do
         %span.icon.is-small
           %i.fa.fa-table
         Tables

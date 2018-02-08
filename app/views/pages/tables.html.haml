@@ -1,0 +1,160 @@
+%nav.breadcrumb.is-small{"aria-label" => "breadcrumbs"}
+  %ul
+    %li
+      %a{:href => "#"} Home
+    %li.is-active
+      %a{"aria-current" => "page", :href => "#"} Tables
+.level
+  .level-left
+    .level-item
+      .title
+        Tables (
+        %a{:href => "http://bulma.io/documentation/elements/table/"}> read more
+        )
+  .level-right
+    .level-item
+      %button.button.is-small{:type => "button"}
+        March 8, 2017 - April 6, 2017
+.columns.is-multiline
+  .column
+    %table.table.is-bordered.is-striped.is-narrow.is-fullwidth
+      %thead
+        %tr
+          %th
+            %abbr{:title => "Position"} Pos
+          %th Team
+          %th
+            %abbr{:title => "Played"} Pld
+          %th
+            %abbr{:title => "Won"} W
+          %th
+            %abbr{:title => "Drawn"} D
+          %th
+            %abbr{:title => "Lost"} L
+          %th
+            %abbr{:title => "Goals for"} GF
+          %th
+            %abbr{:title => "Goals against"} GA
+          %th
+            %abbr{:title => "Goal difference"} GD
+          %th
+            %abbr{:title => "Points"} Pts
+          %th Qualification or relegation
+      %tfoot
+        %tr
+          %th
+            %abbr{:title => "Position"} Pos
+          %th Team
+          %th
+            %abbr{:title => "Played"} Pld
+          %th
+            %abbr{:title => "Won"} W
+          %th
+            %abbr{:title => "Drawn"} D
+          %th
+            %abbr{:title => "Lost"} L
+          %th
+            %abbr{:title => "Goals for"} GF
+          %th
+            %abbr{:title => "Goals against"} GA
+          %th
+            %abbr{:title => "Goal difference"} GD
+          %th
+            %abbr{:title => "Points"} Pts
+          %th Qualification or relegation
+      %tbody
+        %tr
+          %th 1
+          %td
+            %a{:href => "https://en.wikipedia.org/wiki/Leicester_City_F.C.", :title => "Leicester City F.C."} Leicester City
+            %strong (C)
+          %td 38
+          %td 23
+          %td 12
+          %td 3
+          %td 68
+          %td 36
+          %td +32
+          %td 81
+          %td
+            Qualification for the
+            %a{:href => "https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage", :title => "2016–17 UEFA Champions League"} Champions League group stage
+        %tr
+          %th 2
+          %td
+            %a{:href => "https://en.wikipedia.org/wiki/Arsenal_F.C.", :title => "Arsenal F.C."} Arsenal
+          %td 38
+          %td 20
+          %td 11
+          %td 7
+          %td 65
+          %td 36
+          %td +29
+          %td 71
+          %td
+            Qualification for the
+            %a{:href => "https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage", :title => "2016–17 UEFA Champions League"} Champions League group stage
+        %tr
+          %th 3
+          %td
+            %a{:href => "https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.", :title => "Tottenham Hotspur F.C."} Tottenham Hotspur
+          %td 38
+          %td 19
+          %td 13
+          %td 6
+          %td 69
+          %td 35
+          %td +34
+          %td 70
+          %td
+            Qualification for the
+            %a{:href => "https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage", :title => "2016–17 UEFA Champions League"} Champions League group stage
+        %tr.is-selected
+          %th 4
+          %td
+            %a{:href => "https://en.wikipedia.org/wiki/Manchester_City_F.C.", :title => "Manchester City F.C."} Manchester City
+          %td 38
+          %td 19
+          %td 9
+          %td 10
+          %td 71
+          %td 41
+          %td +30
+          %td 66
+          %td
+            Qualification for the
+            %a{:href => "https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round", :title => "2016–17 UEFA Champions League"} Champions League play-off round
+        %tr
+          %th 5
+          %td
+            %a{:href => "https://en.wikipedia.org/wiki/Manchester_United_F.C.", :title => "Manchester United F.C."} Manchester United
+          %td 38
+          %td 19
+          %td 9
+          %td 10
+          %td 49
+          %td 35
+          %td +14
+          %td 66
+          %td
+            Qualification for the
+            %a{:href => "https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage", :title => "2016–17 UEFA Europa League"} Europa League group stage
+    %nav.pagination.is-centered{"aria-label" => "pagination", :role => "navigation"}
+      %a.pagination-previous Previous
+      %a.pagination-next Next page
+      %ul.pagination-list
+        %li
+          %a.pagination-link{"aria-label" => "Goto page 1"} 1
+        %li
+          %span.pagination-ellipsis …
+        %li
+          %a.pagination-link{"aria-label" => "Goto page 45"} 45
+        %li
+          %a.pagination-link.is-current{"aria-current" => "page", "aria-label" => "Page 46"} 46
+        %li
+          %a.pagination-link{"aria-label" => "Goto page 47"} 47
+        %li
+          %span.pagination-ellipsis …
+        %li
+          %a.pagination-link{"aria-label" => "Goto page 86"} 86
+    -# TODO %script{:src => "/bulma-admin-dashboard-template/dist/build.js"}

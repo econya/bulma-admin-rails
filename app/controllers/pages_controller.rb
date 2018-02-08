@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def presentations
   end
+
+  def tables
+  end
 end
