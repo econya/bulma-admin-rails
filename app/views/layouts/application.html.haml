@@ -1,10 +1,16 @@
 !!!
-%html
+%html{:lang => "en"}
   %head
+    %meta{:content => "index, follow", :name => "robots"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7", :name => "viewport"}/
+    %meta{:content => "en-EN", :name => "language"}/
+    %meta{:content => "Irfan Maulana", :name => "author"}/
     %title BulmaAdminRails
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    -# TODO %link{:href => "/bulma-admin-dashboard-template/dist/main.css", :rel => "stylesheet"}/
   %body
     = yield
