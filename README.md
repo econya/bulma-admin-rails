@@ -1,6 +1,8 @@
 # Bulma-Admin-Rails
 
-Very basic Rails5 app including:
+Very basic Rails5 app to showcase font-awesome, bulma and the bulma-admin template.
 
-* font-awesome via https://github.com/bokmann/font-awesome-rails
+## Assets
 
+* [font-awesome](https://fontawesome.io) via https://github.com/bokmann/font-awesome-rails
+* [bulma](https://bulma.io) via https://rails-assets.org/#/components/bulma
