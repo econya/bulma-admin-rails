@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def dashboard
   end
+
+  def forms
+  end
 end

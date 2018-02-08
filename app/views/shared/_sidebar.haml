@@ -11,7 +11,7 @@
     Administration
   %ul.menu-list
     %li
-      %a{:href => "/bulma-admin-dashboard-template/forms.html"}
+      = link_to forms_path, class: nav_class_if_active('pages#forms') do
         %span.icon.is-small
           %i.fa.fa-pencil-square-o
         Forms
