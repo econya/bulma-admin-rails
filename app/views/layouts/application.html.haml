@@ -14,4 +14,9 @@
     -# TODO %link{:href => "/bulma-admin-dashboard-template/dist/main.css", :rel => "stylesheet"}/
   %body
     = render 'shared/header'
-    = yield
+    .wrapper
+      .columns
+        %aside.column.is-2.aside
+          = render 'shared/sidebar'
+        %main.column.main
+          = yield
