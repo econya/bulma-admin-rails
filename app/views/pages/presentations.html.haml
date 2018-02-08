@@ -1,0 +1,39 @@
+%nav.breadcrumb.is-small{"aria-label" => "breadcrumbs"}
+  %ul
+    %li
+      %a{:href => "#"} Home
+    %li.is-active
+      %a{"aria-current" => "page", :href => "#"} Presentations
+.level
+  .level-left
+    .level-item
+      .title Presentations
+  .level-right
+    .level-item
+      %button.button.is-small{:type => "button"}
+        March 8, 2017 - April 6, 2017
+.columns.is-multiline
+  .column.is-6
+    .panel
+      %p.panel-heading
+        Chart - Bar Style (Chart.js)
+      .panel-block
+        %canvas#chartBar{:height => "400", :width => "400"}
+  .column.is-6
+    .panel
+      %p.panel-heading
+        Chart - Line Style (Chart.js)
+      .panel-block
+        %canvas#chartLine{:height => "400", :width => "400"}
+  .column.is-6
+    .panel
+      %p.panel-heading
+        Chart - Doughnut Style (Chart.js)
+      .panel-block
+        %canvas#chartDoughnut{:height => "400", :width => "400"}
+  .column.is-6
+    .panel
+      %p.panel-heading
+        Chart - Scatter Style (Chart.js)
+      .panel-block
+        %canvas#chartScatter{:height => "400", :width => "400"}
