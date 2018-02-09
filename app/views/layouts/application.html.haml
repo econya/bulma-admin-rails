@@ -19,4 +19,9 @@
         %aside.column.is-2.aside
           = render 'shared/sidebar'
         %main.column.main
+          - flash.each do |type, message|
+            .notification{ :class => bulma_flash_class[type] || 'is-primary'}
+              %button.delete
+              = message
+              (would like to have a small icon, too).
           = yield
