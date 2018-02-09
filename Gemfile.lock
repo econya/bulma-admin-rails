@@ -127,6 +127,7 @@ GEM
       railties (= 5.1.4)
       sprockets-rails (>= 2.0.0)
     rails-assets-bulma (0.6.2)
+    rails-assets-chartjs (2.7.1)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -213,6 +214,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails-assets-bulma!
+  rails-assets-chartjs!
   redcarpet
   sass-rails (~> 5.0)
   selenium-webdriver
