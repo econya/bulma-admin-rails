@@ -23,4 +23,7 @@ class PagesController < ApplicationController
       flash[flash_type] = "A flash of type #{flash_type}"
     end
   end
+
+  def login
+  end
 end

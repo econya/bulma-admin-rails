@@ -1,0 +1,27 @@
+%section.is-fullheight
+  .level
+    .container.has-text-centered.level-item
+      .column.is-4.has-offset-4
+        %h3.title.has-text-grey Login
+        %p.subtitle.has-text-grey Please login to proceed
+        .box
+          %figure.avatar
+            %img{ :src => "https://placehold.it/128x128" }
+          %form
+            .field
+              .control
+                %input.input.is-large{ :type => 'email', :placeholder => 'your email', :autofocus => ''}
+            .field
+              .control
+                %input.input.is-large{ :type => 'password', :placeholder => 'your password'}
+            .field
+              %label.checkbox
+                %input{ :type => "checkbox"} Remember me
+            %a.button.is-block.is-info.is-large Login
+        .level
+          .level-item
+            %a{ :href => "../"} Sign Up
+          .level-item
+            %a{ :href => "../"} Forgot Password
+          .level-item
+            %a{ :href => "../"} Need Help?

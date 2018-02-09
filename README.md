@@ -9,6 +9,7 @@ Most parts of the layout are taken from the [bulma-admin template](https://githu
 * [font-awesome](https://fontawesome.io) via https://github.com/bokmann/font-awesome-rails
 * [bulma](https://bulma.io) via https://rails-assets.org/#/components/bulma
 * [bulma-admin template](https://github.com/mazipan/bulma-admin-dashboard-template), obviously modified
+* [bulma login template](https://github.com/dansup/bulma-templates) from Daniel Supernault
 
 ## Kick-Ass-libraries used (besides what comes with rails and ruby)
 
