@@ -25,5 +25,6 @@ class PagesController < ApplicationController
   end
 
   def login
+    render layout: 'blank'
   end
 end
