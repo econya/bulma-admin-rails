@@ -1,13 +1,18 @@
 .md {
   h1 {
-    font-size: 180%;
+    @extend .title;
   }
 
   h2 {
-    font-size: 160%;
+    @extend .subtitle;
   }
 
   h3 {
     font-size: 160%;
+  }
+
+  li {
+    list-style-type: circle;
+    list-style: inside;
   }
 }
