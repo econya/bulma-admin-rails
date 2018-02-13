@@ -60,5 +60,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Assets
 gem 'font-awesome-rails'
-gem 'rails-assets-bulma',   source: 'https://rails-assets.org'
-gem 'rails-assets-chartjs', source: 'https://rails-assets.org'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bulma'
+  gem 'rails-assets-chartjs'
+end
