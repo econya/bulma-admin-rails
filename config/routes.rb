@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'ui-elements',   to: 'pages#ui_elements'
   get 'notifications', to: 'pages#notifications'
   get 'login',         to: 'pages#login'
+  get 'datatables',    to: 'tables#index'
 end

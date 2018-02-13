@@ -1,0 +1,153 @@
+%nav.breadcrumb.is-small{"aria-label" => "breadcrumbs"}
+  %ul
+    %li
+      %a{:href => "#"} Home
+    %li.is-active
+      %a{"aria-current" => "page", :href => "#"} Tables
+.level
+  .level-left
+    .level-item
+      .title
+        Tables (
+        %a{:href => "http://bulma.io/documentation/elements/table/"}> read more
+        )
+  .level-right
+    .level-item
+      %button.button.is-small{:type => "button"}
+        March 8, 2017 - April 6, 2017
+.subtitle
+  Kaminari paginated table (no JS)
+.columns.is-multiline
+  .column
+    = paginate @stuffs
+    %table.table.is-bordered.is-striped.is-narrow.is-fullwidth
+      %thead
+        %tr
+          %th
+            %abbr{:title => "Position"} Pos
+          %th Team
+          %th
+            %abbr{:title => "Played"} Pld
+          %th
+            %abbr{:title => "Won"} W
+          %th
+            %abbr{:title => "Drawn"} D
+          %th
+            %abbr{:title => "Lost"} L
+          %th
+            %abbr{:title => "Goals for"} GF
+          %th
+            %abbr{:title => "Goals against"} GA
+          %th
+            %abbr{:title => "Goal difference"} GD
+          %th
+            %abbr{:title => "Points"} Pts
+          %th Qualification or relegation
+      %tfoot
+        %tr
+          %th
+            %abbr{:title => "Position"} Pos
+          %th Team
+          %th
+            %abbr{:title => "Played"} Pld
+          %th
+            %abbr{:title => "Won"} W
+          %th
+            %abbr{:title => "Drawn"} D
+          %th
+            %abbr{:title => "Lost"} L
+          %th
+            %abbr{:title => "Goals for"} GF
+          %th
+            %abbr{:title => "Goals against"} GA
+          %th
+            %abbr{:title => "Goal difference"} GD
+          %th
+            %abbr{:title => "Points"} Pts
+          %th Qualification or relegation
+      %tbody
+        - @stuffs.each do |stuff|
+          %tr
+            %th= stuff.id
+            %td= stuff.num
+            %td= stuff.word
+            %td 23
+            %td 12
+            %td 3
+            %td 68
+            %td 36
+            %td +32
+            %td 81
+            %td
+              Qualification for the
+              %a{:href => "https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage", :title => "2016–17 UEFA Champions League"} Champions League group stage
+    = paginate @stuffs
+
+.subtitle
+  Using datatables (JS)
+.columns.is-multiline
+  .column
+    = paginate @stuffs
+    %table.table.is-bordered.is-striped.is-narrow.is-fullwidth{ :role => 'datatable', :data => { url: datatables_path(format: :json)} }
+      %thead
+        %tr
+          %th
+            %abbr{:title => "Position"} Pos
+          %th Team
+          %th
+            %abbr{:title => "Played"} Pld
+          %th
+            %abbr{:title => "Won"} W
+          %th
+            %abbr{:title => "Drawn"} D
+          %th
+            %abbr{:title => "Lost"} L
+          %th
+            %abbr{:title => "Goals for"} GF
+          %th
+            %abbr{:title => "Goals against"} GA
+          %th
+            %abbr{:title => "Goal difference"} GD
+          %th
+            %abbr{:title => "Points"} Pts
+          %th Qualification or relegation
+      %tfoot
+        %tr
+          %th
+            %abbr{:title => "Position"} Pos
+          %th Team
+          %th
+            %abbr{:title => "Played"} Pld
+          %th
+            %abbr{:title => "Won"} W
+          %th
+            %abbr{:title => "Drawn"} D
+          %th
+            %abbr{:title => "Lost"} L
+          %th
+            %abbr{:title => "Goals for"} GF
+          %th
+            %abbr{:title => "Goals against"} GA
+          %th
+            %abbr{:title => "Goal difference"} GD
+          %th
+            %abbr{:title => "Points"} Pts
+          %th Qualification or relegation
+      %tbody
+        - @stuffs.each do |stuff|
+          %tr
+            %th= stuff.id
+            %td= stuff.num
+            %td= stuff.word
+            %td 23
+            %td 12
+            %td 3
+            %td 68
+            %td 36
+            %td +32
+            %td 81
+            %td
+              Qualification for the
+              %a{:href => "https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage", :title => "2016–17 UEFA Champions League"} Champions League group stage
+    = paginate @stuffs
+
