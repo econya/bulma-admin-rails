@@ -39,6 +39,24 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     content_tag :p, help_text, class: 'help'
   end
 
+  def errors
+    if object.errors.any?
+      content_tag :div, class: 'block' do
+        content_tag :div, class: 'notification is-danger' do
+          heading = content_tag :h2 do
+            "#{@template.pluralize(object.errors.count, 'error')} prohibited this #{object.class} from being saved:"
+          end
+          ul = content_tag :ul do
+            object.errors.full_messages.collect do |err|
+              @template.concat(content_tag(:li, err))
+            end
+          end
+          heading + ul
+        end
+      end
+    end
+  end
+
   # yields classes (string) for the input field.
   # Roughly creating this
   # .field.is-horizontal
