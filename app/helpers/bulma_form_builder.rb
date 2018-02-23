@@ -109,6 +109,25 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 
+  def labeled_datetime_select attr_name, help_text: nil
+    horizontal_field_wrap(attr_name,
+                          help_text: help_text) do |classes|
+      date_time_selector = ActionView::Helpers::DateTimeSelector.new(Time.current,
+                                                                     { prefix: object.model_name.param_key,
+                                                                       field_name: attr_name.to_s,
+                                                                       include_position: true})
+      @template.concat(div_with_class("select") { date_time_selector.select_year })
+      @template.concat(" ")
+      @template.concat(div_with_class("select") { date_time_selector.select_month })
+      @template.concat(" ")
+      @template.concat(div_with_class("select") { date_time_selector.select_day })
+      @template.concat(" ")
+      @template.concat(div_with_class("select") { date_time_selector.select_hour })
+      @template.concat(content_tag :span, " : ")
+      @template.concat(div_with_class("select") { date_time_selector.select_minute })
+    end
+  end
+
   private
 
   def div_with_class classes
