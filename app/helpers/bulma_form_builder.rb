@@ -3,7 +3,9 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
 
   #   <div class="field-label is-normal"> ...(label class="label")... </div>
   def bulma_label attr_name
-    div_with_class('field-label is-normal') { label(attr_name, class: 'label') }
+    div_with_class('field-label is-normal') do
+      label(attr_name, class: 'label') if attr_name.present?
+    end
   end
 
   # Icon to be used within an input field.
