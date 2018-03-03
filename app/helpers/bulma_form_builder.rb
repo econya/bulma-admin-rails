@@ -130,6 +130,14 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 
+  def submit(msg='new')
+    horizontal_field_wrap() do |classes|
+      content_tag :button, class: 'button is-primary' do
+        msg
+      end
+    end
+  end
+
   private
 
   def div_with_class classes
