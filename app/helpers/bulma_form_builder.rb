@@ -72,7 +72,7 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
   #           %i
   #       %p.help.is-danger
   #       %p.help
-  def horizontal_field_wrap attr_name, icon: nil, help_text: nil
+  def horizontal_field_wrap attr_name='', icon: nil, help_text: nil
     content_tag :div, class: 'field is-horizontal' do
       label_html = bulma_label attr_name
       field_body_html = content_tag :div, class: 'field-body' do
