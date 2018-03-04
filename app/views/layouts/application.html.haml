@@ -21,6 +21,24 @@
           - flash.each do |type, message|
             .notification{ :class => bulma_flash_class[type] || 'is-primary'}
               %button.delete
+              - case type
+              - when 'error'
+                %span.icon.has-text-warning
+                  %i.fa.fa-warning
+              - when 'alert'
+                %span.icon.has-text-danger
+                  %i.fa.fa-warning
+              - when 'notice'
+                %span.icon.has-text-info
+                  %i.fa.fa-info-circle
+              - when 'info'
+                %span.icon.has-text-notice
+                  %i.fa.fa-info-circle
+              - when 'success'
+                %span.icon.has-text-warning
+                  %i.fa.fa-check-square
+              - else
+                -# no icon
+
               = message
-              (would like to have a small icon, too).
           = yield
