@@ -21,6 +21,7 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
 
   # true iff (validation) error on attribute found
   def has_errors? attr_name
+    #object&.errors&.[](attr_name)&.any?
     object.errors[attr_name].any?
   end
 
@@ -72,9 +73,9 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
   #           %i
   #       %p.help.is-danger
   #       %p.help
-  def horizontal_field_wrap attr_name='', icon: nil, help_text: nil
+  def horizontal_field_wrap attr_name='', label:nil, icon: nil, help_text: nil
     content_tag :div, class: 'field is-horizontal' do
-      label_html = bulma_label attr_name
+      label_html = bulma_label label || attr_name
       field_body_html = content_tag :div, class: 'field-body' do
         field = content_tag :div, class: 'field is-expanded' do
           control_classes = ['control']
@@ -93,9 +94,10 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 
-  def labeled_text_field attr_name, icon: nil, placeholder: nil, help_text: nil
+  def labeled_text_field attr_name, label: nil, icon: nil, placeholder: nil, help_text: nil
     horizontal_field_wrap(attr_name,
                           icon: icon,
+                          label: label,
                           help_text: help_text) do |classes|
       text_field(attr_name, class: "input #{classes}",
                  placeholder: placeholder)
