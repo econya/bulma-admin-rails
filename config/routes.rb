@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'notifications', to: 'pages#notifications'
   get 'login',         to: 'pages#login'
   get 'datatables',    to: 'tables#index'
+  get 'changelog' ,    to: 'pages#changelog'
 end
