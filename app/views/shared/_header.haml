@@ -4,13 +4,14 @@
       .navbar-brand
         %a.navbar-item.is-brand
           %img.navbar-brand-logo{:alt => "Bulma Admin Template logo", :src => asset_path("logo.png")}
-        %a.navbar-item.is-tab.is-hidden-mobile.is-active
+        %a.navbar-item.is-tab.is-hidden-mobile.is-active(href=root_path)
           %span.icon.is-medium>
             %i.fa.fa-home
           Home
         %a.navbar-item.is-tab.is-hidden-mobile Features
         %a.navbar-item.is-tab.is-hidden-mobile Pricing
         %a.navbar-item.is-tab.is-hidden-mobile About
+        %a.navbar-item.is-tab.is-hidden-mobile(href=changelog_path) Changelog
         %button.button.navbar-burger{"data-target" => "navMenu"}
           %span
           %span
