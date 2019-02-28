@@ -31,15 +31,15 @@ I tried to keep the commits relatively clean so you can rebuild this projects sk
 
 To demo or play around, clone this repository
 
-  git clone https://github.com/econya/bulma-admin-rails
+    git clone https://github.com/econya/bulma-admin-rails
 
 get dependencies and stuff
 
-  bundle
+    bundle
 
 and start the rails server
 
-  rails s
+    rails s
 
 Now open your browser and with it `http://localhost:3000`.
 
