@@ -1,8 +1,10 @@
 # Bulma-Admin-Rails
 
-Very basic Rails5 app to showcase font-awesome, bulma 0.6, the bulma-admin template and some other goodies.
+**Work in progress / needs to be done (update dependecies) - help welcome!**
 
-It uses the standard stack, besides application.scss no Rails fiddling, which also means turbolinks etc.
+Very basic Rails6 app to showcase [font-awesome](fontawesome.com), [bulma 0.6](bulma.io), the bulma-admin template and some other goodies.
+
+It uses the standard stack as of Rails 5, besides application.scss no Rails fiddling, which also means included turbolinks etc.  However it does not use the webpacker/yarn empire.
 
 Most parts of the layout are taken from the [bulma-admin template](https://github.com/mazipan/bulma-admin-dashboard-template) of Irfan Maulana.
 
@@ -87,7 +89,7 @@ See above.  The symlinks where created as:
 
 ### Bulma Form Helper
 
-In `app/helpers/bulma_form_builder` a FormBuilder is implemented to create somewhat okayish looking fomrs.
+In `app/helpers/bulma_form_builder` a FormBuilder is implemented to create somewhat okayish looking forms.
 (also config/environment.rb changes)
 
 
